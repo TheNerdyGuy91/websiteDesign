@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<title>Interests</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#hide").mouseleave(function(){
+        $("pa").hide();
+        $("ImageM").hide();
+    });
+    $("#hide").mouseenter(function(){
+        $("pa").show();
+        $("ImageM").show();
+    });
+     $("#hidden").click(function(){
+        $("pg").toggle();
+        $("#hImage").toggle();
+        $("h4").toggle();
+        $("pn").hide();
+    });
+     $("#hid").click(function(){
+        $("pm").fadetoggle();
+        $("#hImage").fadetoggle();
+        $("h6").fadetoggle();
+        $("pn").hide();
+    });
+});
+function myFunction(imgs) {
+    var expandImg = document.getElementById("expandedImg");
+    var imgText = document.getElementById("imgtext");
+    expandImg.src = imgs.src;
+    imgText.innerHTML = imgs.alt;
+    expandImg.parentElement.style.display = "block";
+    
+}
+
+</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+/* The grid: Four equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 25%;
+    padding: 10px;
+}
+
+/* Style the images inside the grid */
+.column img {
+    opacity: 0.8; 
+    cursor: pointer; 
+}
+pa
+{
+    text-align: left;
+    color: red;
+    
+}
+
+.column img:hover {
+    opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* The expanding image container */
+.container {
+    position: relative;
+    display: none;
+}
+
+/* Expanding image text */
+#imgtext {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    font-size: 20px;
+}
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+press:hover
+{
+color: cyan;
+
+}
+pn
+{
+ font-size: 10px;
+}
+</style>
+<body class="w3-black">
+
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+     <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-black"> 
+    <i class="fa fa-user-circle w3-xxlarge" aria-hidden="true"></i>
+    <p>ABOUT</p>
+     </a>
+  <a href="#game" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+   <i class="fa fa-gamepad w3-xxlarge"></i>
+    <p>GAMES</p>
+  </a>
+  <a href="#movie" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-film w3-xxlarge"></i>
+    <p>MOVIES</p>
+  </a>
+</nav>
+
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+    <a href="#game" class="w3-bar-item w3-button" style="width:25% !important">GAMES</a>
+    <a href="#movie" class="w3-bar-item w3-button" style="width:25% !important">MOVIES</a>
+  </div>
+</div>
+
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+    <h1 class="w3-jumbo"><span class="w3-hide-small">I'm</span> Benjamin R Fletes.</h1>
+    <p>THE GUY YOU WANT ON YOUR SIDE</p>
+  </header>
+
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+    <h2 class="w3-text-light-grey">Benjamin Fletes</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <h1 id = "hide" id="ab"> About me</h1>
+	<pa> I am a student at San Francisco State University. I enjoy playing video games 
+    	 and watching movies.I am determined my goal in life is "live life to the fullest."</pa>
+  <pa> I am planning on becoming a roboticist in the future I have knowledge of C++, Math, and Physics. I use what I learn in school to the real world. 
+      I master them.  </pa>
+  </div>
+  <!-- Game section -->
+  <div class="w3-padding-64 w3-content" id="game">
+    <h2 id = "hidden" class="w3-text-light-grey">Games</h2>
+    <pn> click on above to close and click again to open</pn>
+    <hr style="width:200px" class="w3-opacity">
+
+     <h4>Games I play</h4>
+  <pg>I like my games and enjoy all of it These are the top games. 
+      I like the action in the games. I do play with friends. 
+      My ps4 online is oneOverInfinity. Do not think I cannot play. 
+      I can with one hand These are the top games</pg>
+   </hr> 
+</div>
+
+<div id = "hImage" class="row">
+  <div class="column">
+    <img src="http://cdn2.knowyourmobile.com/sites/knowyourmobilecom/files/styles/gallery_wide/public/2017/03/the-legend-of-zelda-breath-of-the-wind-things-to-do.jpg?itok=RQ3NUG-q" alt="LOZ BOTWQ" style="width:100%" onmouseenter="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="https://images7.alphacoders.com/699/thumb-350-699245.png" alt="DOOM" style="width:100%" onmouseenter="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="https://i.ytimg.com/vi/a3o_ZKWi-OU/maxresdefault.jpg" alt="Mario Kart 8" style="width:100%" onmouseenter="myFunction(this);">
+  </div>
+</div>
+
+<div class="container">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg" style="width:40%">
+  <div id="imgtext"></div>
+</div>
+<pg>With games I plan to design them in the future after completing a bachelors in computer science </pg>
+  </div>
+
+    <!-- Grid for photos -->
+<div class="w3-padding-64 w3-content" id="movie">
+    <h2 id = "hid" class="w3-text-light-grey">Movies</h2>
+    <hr style="width:200px" class="w3-opacity">
+	<pm> movies are the best past time. If it is a super hero movie I am going to watch it</pm> 
+    <!-- Grid for photos -->
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzQYH8NUiBaQPqB09FfQpqxZyv48VkeK5jqtbjOtswXvrKnsKe" alt = "A great movie" style="width:50%">
+        <br><pm> Avengers is at the top of the good movies list </pm> <br>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCl-dY26KiyWvlji_v5PlciIvWpUWPP9nEQNy2-LgdmT5SnIXg" style="width:50%">
+        <br><pm>This movie is better with the ultimate edition but it is one of my favorites</pm><br>
+      </div>
+      </div>
+      
+</body>
+</html>

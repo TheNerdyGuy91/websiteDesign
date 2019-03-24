@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+<title>HomePage</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<style>
+.w3-row-padding img {margin-bottom: 12px}
+.w3-sidebar {width: 120px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+body
+{
+font-family: "Montserrat", sans-serif;
+margin: 0;
+background: black; 
+}
+.icon-bar  {
+      width: 39px;
+    background-color: darkred;
+}
+p1, p2
+{
+  color: white;
+  text-align: right; 
+    text-shadow:
+    1px 1px 0 #000,
+    1px 1px 0 #000,
+    1px 3px 0 #000,
+    1px 1px 0 #000;
+}
+p1:hover
+{
+ color: red;
+}
+p2:hover
+{
+ color: blueviolet;
+}
+h1:hover
+{
+ color: red;
+}
+.wrapper
+{
+        position: absolute;
+        top: 61%;
+        left: 3%;
+        width: 100px;
+        transform: translate(-50%,-50%);
+        display: box;
+        text-align: center
+}
+.wrapper ul{
+    list-style: none;
+    font-size: 32px
+
+}
+.wrapper ul li{
+    width: 75px;
+    height: 75px;
+    line-height: 10px;
+    margin: 0 10px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 10%;
+    border: 5px solid #444c47;
+    float: center;
+    transition: all 0.5s ease;
+}
+
+.wrapper ul li .fa
+{
+    margin-top: 2px;
+    transition: all 0.5s ease;
+}
+
+.wrapper ul li:hover.About{
+    border: 5px solid red;
+    box-shadow: 0 0 50px  cyan;
+    transition: all 0.5s ease;
+    color: blue;
+    display: box;
+}
+
+.wrapper ul li:hover.Social{
+    border: 5px solid  yellow;
+    box-shadow: 0 0 15px  #3b5998;
+    transition: all 0.5s ease;
+}
+.wrapper ul li:hover .fa-Social{
+    color: yellow;
+    text-shadow: 0 0 15px #3b5998;
+    transition: all 0.5s ease;
+}
+.wrapper ul li:hover.Contact{
+    border: 5px solid  blue;
+    box-shadow: 0 0 10px  #3b5998;
+    transition: all 0.5s ease;
+}
+.wrapper ul li:hover .fa-Contact{
+    color: yellow;
+    text-shadow: 0 0 15px #3b5998;
+    transition: all 0.5s ease;
+}
+.wrapper ul li:hover.GitHub{
+    border: 5px solid #c180ff;
+    box-shadow: 0 0 15px  #3b5998;
+    transition: all 0.5s ease;
+}
+.wrapper ul li:hover .fa-Contact{
+    color: #c180ff;
+    text-shadow: 0 0 15px #3b5998;
+    transition: all 0.5s ease;
+}
+ul
+{
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.wrapper ul li i1:hover
+{
+color: red;
+box-shadow: 0 0 5px red;
+text-shadow: 0 0 5px red;
+}
+.wrapper ul li i2:hover
+{
+color: blue;
+box-shadow: 0 0 5px blue;
+text-shadow: 0 0 5px blue;
+}
+.wrapper ul li i3:hover
+{
+color: violet;
+box-shadow: 0 0 5px cyan;
+text-shadow: 0 0 5px yellow;
+}
+.wrapper ul li i4:hover
+{
+color: violet;
+box-shadow: 0 0 5px purple;
+text-shadow: 0 0 5px purple;
+}
+body2
+{
+background: #2b2b2b;
+margin: 0;
+padding: 0;
+}
+.loader
+{
+	height: 40px;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+.loader span
+{
+	font-family: arial;
+    font-size: 24px;
+    color: red;
+    display: inline-block;
+    transition: all .5s;
+    animation: animate 2s infinite;
+}
+.loader span:nth-child(1)
+{
+	animation-delay: .1s
+}
+.loader span:nth-child(2)
+{
+	animation-delay: .2s
+}
+.loader span:nth-child(3)
+{
+	animation-delay: .3s
+}
+.loader span:nth-child(4)
+{
+	animation-delay: .4s
+}
+.loader span:nth-child(5)
+{
+	animation-delay: .5s
+}
+.loader span:nth-child(6)
+{
+	animation-delay: .6s
+}
+.loader span:nth-child(7)
+{
+	animation-delay: .7s
+}
+.loader span:nth-child(8)
+{
+	animation-delay: .8s
+}
+.loader span:nth-child(9)
+{
+	animation-delay: .1s
+}
+.loader span:nth-child(10)
+{
+	animation-delay: .2s
+}
+.loader span:nth-child(11)
+{
+	animation-delay: .3s
+}
+.loader span:nth-child(12)
+{
+	animation-delay: .4s
+}
+.loader span:nth-child(13)
+{
+	animation-delay: .5s
+}
+.loader span:nth-child(14)
+{
+	animation-delay: .6s
+}
+@keyframes animate
+{
+ 0%
+ {
+ color: white;
+ transform: translateY(0);
+ margin-left: 0;
+ }
+  25%
+ {
+ color: white;
+ transform: translateY(-5px);
+ margin-left: 5px;
+ }
+  100%
+ {
+ color: red;
+ transform: translateY(0);
+ margin-left: 5px;
+ }
+
+}
+</style>
+<body>
+
+<div class="wrapper icon-bar">
+<a href="about.html">
+  <ul>        
+     <li class="About">
+     <i1 class="fa fa-user-circle-o fa-2x" aria-hidden="true"></i1>
+      </li>
+      </ul> 
+     <p1>About</p1> 
+</a>
+    <a href ="https://www.instagram.com/benjaminthenerd/?hl=en">
+  <ul>        
+     <li class="Social">
+     <i3 class="fa fa-instagram fa-2x" aria-hidden="true"></i3>
+      </li>
+      </ul> 
+    </a>
+     <p2>Social</p2> 
+     <a href="https://github.com/TheNerdyGuy91">
+  <ul>        
+     <li class="GitHub">
+     <i4 class="fa fa-github fa-2x" aria-hidden="true"></i4>
+      </li>
+      </ul> 
+     <p1>GitHub</p1> 
+     </a>
+     <a href="Contact.php">
+  <ul>        
+     <li class="Contact">
+    <i2 class="fa fa-envelope-o fa-2x" aria-hidden="true"></i2>
+      </li>
+      </ul> 
+     <p1>Contact Me</p1> 
+     </a>
+</div>
+
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+   <div class = "container loader">
+<span>B</span>
+<span>e</span>
+<span>n</span>
+<span>j</span>
+<span>a</span>
+<span>m</span>
+<span>i</span>
+<span>n</span>
+<span>R</span>
+<span>F</span>
+<span>l</span>
+<span>e</span>
+<span>t</span>
+<span>e</span>
+<span>s</span>
+</div>
+    <img src="https://i.redd.it/t5d9yfijti5x.png" alt="boy" class="w3-image" width="500" height="500">
+  </header>
+
+</div>
+
+</body>
+</html>

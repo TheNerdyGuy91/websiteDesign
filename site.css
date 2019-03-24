@@ -1,0 +1,9 @@
+root { 
+    display: block;
+}
+
+.sansSerif{
+    font-family: sans-serif;
+    border-color: red;
+    border-style: solid;
+}
